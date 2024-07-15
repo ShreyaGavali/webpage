@@ -23,9 +23,6 @@ const ContactUsForm = ({ onClose }) => {
             const response = await axios.post('https://getform.io/f/brolyqwa', formData);
             setLoading(false);
             toast.success('Form submitted successfully!');
-            setTimeout(() => {
-                window.location.href = '/';
-            }, 3000); // Delay of 3 seconds
         } catch (err){
             console.log(err.message);
         }
