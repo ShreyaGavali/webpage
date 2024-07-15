@@ -20,7 +20,7 @@ const ContactUsForm = ({ onClose }) => {
         formData.append('lastName', lastName);
 
         try{
-            const response = await axios.post('https://getform.io/f/bdrynqob', formData);
+            const response = await axios.post('https://getform.io/f/brolyqwa', formData);
             setLoading(false);
             toast.success('Form submitted successfully!');
             setTimeout(() => {
